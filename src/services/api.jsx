@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'c368bf9df1ba52d897321d4daadfc86b';
+const API_KEY = 'colocar a chave pessoal para teste';
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 const api = axios.create({
@@ -11,7 +11,6 @@ const api = axios.create({
     }
 });
 
-// Funções para buscar dados
 export const searchMovies = (query, page = 1) =>
     api.get('/search/movie', { params: { query, page } });
 
@@ -23,3 +22,4 @@ export const getMovieCredits = (id) =>
 
 export default api;
 
+//
